@@ -23,7 +23,7 @@ export const useCartStore = defineStore('cart', {
     async getCart() {
       const data = await $fetch('http://localhost:4000/cart')
       this.cart = data
-      console.log(this.cart)
+      // console.log(this.cart)
     },
 
     async deleteFromCart(product) {

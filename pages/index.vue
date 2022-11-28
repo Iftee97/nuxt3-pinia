@@ -11,4 +11,6 @@
 
 <script setup>
 const { data: products } = await useFetch("http://localhost:4000/products"); // fetch products
+
+// start up json server: json-server --watch data/db.json --port 4000
 </script>
