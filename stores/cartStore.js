@@ -92,23 +92,5 @@ export const useCartStore = defineStore('cart', {
         })
       }
     },
-
-    async addProduct(product) {
-      const exists = this.cart.find((p) => p.id === product.id)
-
-      if (exists) {
-        this.incQuantity(product)
-      }
-
-      if (!exists) {
-        this.cart.push({ ...product, quantity: 1 })
-
-        // make post request
-        await $fetch('http://localhost:4000/cart', {
-          method: 'post',
-          body: JSON.stringify({ ...product, quantity: 1 })
-        })
-      }
-    }
   }
 })
