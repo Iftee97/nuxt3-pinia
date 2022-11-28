@@ -7,7 +7,7 @@
       <p class="text-lg text-secondary my-3">
         {{ product.price }} Silver Coins
       </p>
-      <button class="btn" @click="addToBasket()" :disabled="isPending">
+      <button class="btn" @click="addToBasket" :disabled="isPending">
         <span v-show="!isPending">Add to Basket</span>
         <span v-show="isPending">Adding...</span>
       </button>
