@@ -1,8 +1,13 @@
 <template>
   <div class="m-8">
-    <header class="wrapper flex justify-between">
+    <header class="wrapper flex justify-between items-center">
       <NuxtLink to="/">
         <h1 class="text-secondary text-5xl">Adventure Store</h1>
+      </NuxtLink>
+      <NuxtLink to="add-product">
+        <span class="text-white text-3xl cursor-pointer hover:underline">
+          Add New Product
+        </span>
       </NuxtLink>
       <NuxtLink to="/cart">
         <span class="material-icons-outlined text-secondary text-5xl">
